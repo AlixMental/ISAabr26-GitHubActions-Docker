@@ -4,11 +4,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Pasamos el título a la plantilla
-    titulo = "Fernando Daniel Murillo Vivanco ..." 
-    # (O puedes usar: titulo = "Fernando en Python con Flask")
+    # Definimos las variables de tu perfil
+    nombre = "Fernando"
+    rol = "Programador y Modelador 3D"
     
-    return render_template('index.html', titulo=titulo)
+    # Pasamos ambas variables al HTML
+    return render_template('index.html', nombre=nombre, rol=rol)
 
 if __name__ == '__main__':
     # Ejecutar en el puerto 5000
