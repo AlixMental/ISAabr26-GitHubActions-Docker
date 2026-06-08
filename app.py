@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Pasamos el título a la plantilla
-    titulo = "Fernando Daniel" 
+    titulo = "Fernando Daniel Murillo" 
     # (O puedes usar: titulo = "Fernando en Python con Flask")
     
     return render_template('index.html', titulo=titulo)
